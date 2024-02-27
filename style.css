@@ -201,15 +201,13 @@ h2 {
 
 .gridcards {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     background-color: rgb(249, 246, 246) ;
     padding-bottom: 25px;
     padding-top: 15px;
 }
 
 .card {
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -217,22 +215,67 @@ h2 {
 .card .card img {
     width: 100%;
     object-fit: cover;
-    height: 65px;
+    height: 220px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 /****** footer ***********/
 .gridfooter {
+    display: flex;
+    flex-direction: column;
     background-color: #353535;
     color:white;
     font-size: 14px;
 }
 
-.logofooter{
+.logofooter img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-left: 10px;
     color: white;
-    width: 75px;
-    height: 10px;
+    width: 26%;
+    height: 20px;
+    filter:invert(white)
+}
+
+.logoblanc {
+   filter:blur(white);
+   color: white;
 }
 
 .liensnav {
-padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.containerlogotexte {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.alignlogotexte {
+    display: inline-flex;
+}
+
+.textefooter1 {
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.textefooter {
+    padding-left: 10px;
+    display: inline-flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
