@@ -1,0 +1,205 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --color1:#d5f0f8;
+    --color2:#c5e2f8;
+    --color3: #89c8fa;
+    --color4: #eafbff;
+    --color5: #99e2d0;
+    --color6: #fcc0ce;
+    --color7: #9747ff;
+}
+
+h3 {
+    color: black;
+}
+
+h4 {
+    color:black;
+    font-weight: 100;
+}
+
+
+/****** Header ***********/
+.logo{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.geographicposition {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(207, 207, 207);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    border: none;
+    padding-left: 50px;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: rgb(207, 207, 207) ;
+}
+::placeholder {
+    border: none;
+    outline: none;
+}
+
+
+/****** titre ***********/
+.gridintroduction {
+    background-color: rgb(249, 246, 246);
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 22px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 50;
+    font-size: 18px;
+    color: grey;
+}
+
+.restaurationchoix {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.exploration {
+    border-radius: 25px;
+    background-color: var(--color7);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    padding: 15px 10px 15px 10px;
+    box-shadow: 0px 2px 5px black (0, 0, 0, 0,5 );
+}
+
+
+/****** fonctionnement ***********/
+.fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.titrefonctionnement {
+  display: flex;
+  width: 100%;
+}
+
+.boutonchoix {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.boutonrestaurants {
+    border: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.cercle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color7);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: white; 
+    margin-right: 40px;
+    margin-left: 0;
+}
+
+.menu {
+    border: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.degustation {
+    border: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    margin-bottom: 10px;
+}
+
+.choixresto {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 120px 15px 0;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.compomenu {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 120px 15px 0;
+    border-radius: 12px;
+    font-size: 14px;  
+}
+
+.degust {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 120px 15px 0;
+    border-radius: 12px;
+    font-size: 14px;     
+}
+
+
+/****** cartes restaurants ***********/
+.gridcards {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(249, 246, 246) ;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+
+/****** footer ***********/
+.gridfooter {
+    background-color: #353535;
+    color:white;
+    font-size: 14px;
+}
+
+.liensnav {
+padding-left: 10px;
+}
