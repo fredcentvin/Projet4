@@ -14,17 +14,26 @@
 }
 
 h3 {
+    font-size: 17px;
     color: black;
+    text-decoration: none;
 }
 
 h4 {
+   
     color:black;
-    font-weight: 100;
+    font-weight: 50;
+    text-decoration: none;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
     object-fit: cover;
-
 }
 
 /****** Header ***********/
@@ -58,15 +67,16 @@ input {
     border: none;
     background-color: #dfdede ;
 }
+
 ::placeholder {
     border: none;
     outline: none;
 }
 
 
-/****** titre ***********/
+/****** section thème ***********/
 .gridintroduction {
-    background-color: rgb(249, 246, 246);
+    background-color: #f6f6f6;
     padding-bottom: 30px;
     padding-top: 20px;
 }
@@ -89,15 +99,20 @@ h2 {
     margin-bottom: 15px;
 }
 
+button {
+    background-color: unset;
+    background-color: linear-gradient( #ff79da #9356dc);
+}
+
 .exploration {
     border-radius: 25px;
-    background: var(--color7);
     color: white;
     font-weight: 600;
     font-size: 16px;
     border: none;
     padding: 15px 10px 15px 10px;
     box-shadow: 0px 2px 5px black (0, 0, 0, 0,5 );
+    background-color: linear-gradient( #ff79da #9356dc);
 }
 
 
@@ -170,6 +185,8 @@ h2 {
     padding: 15px 120px 15px 0;
     border-radius: 12px;
     font-size: 14px;
+    border: none;
+    background-color: #f6f6f6;
 }
 
 .compomenu {
@@ -180,6 +197,8 @@ h2 {
     padding: 15px 120px 15px 0;
     border-radius: 12px;
     font-size: 14px;  
+    border: none;
+    background-color: #f6f6f6;
 }
 
 .degust {
@@ -189,7 +208,9 @@ h2 {
     width: 100%;
     padding: 15px 120px 15px 0;
     border-radius: 12px;
-    font-size: 14px;     
+    font-size: 14px;   
+    border: none;
+    background-color: #f6f6f6;  
 }
 
 
@@ -200,24 +221,62 @@ h2 {
 }
 
 .gridcards {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background-color: rgb(249, 246, 246) ;
+    background-color: #f6f6f6 ;
     padding-bottom: 25px;
     padding-top: 15px;
 }
 
-.card {
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.cardresto {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.card .card img {
+.cardresto .card img {
     width: 100%;
     object-fit: cover;
     height: 220px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.resto-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.resto-petittexte {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coeurcard {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
 }
 
 /****** footer ***********/
