@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -155,7 +156,7 @@ h2 {
     height: 20px;
     color: white; 
     margin-right: 40px;
-    margin-left: 0;
+    margin-left: -7px;
 }
 
 .menu {
@@ -300,19 +301,27 @@ h2 {
     font-size: 14px;
 }
 
+.logofooter {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 10px;
+}
+
 .logofooter img {
     display: flex;
     flex-direction: row;
     padding-top: 15px;
     padding-left: 10px;
-    color: white;
-    width: 26%;
-    height: 20px;
+    filter: invert(100%);
+    width: 20%;
+    height: auto;
 }
 
 .logoblanc {
     object-fit: cover;
-    color: white;
 }
 
 .liensnav {
@@ -357,10 +366,12 @@ p {
 
 .boutonchoix {
     width: 100%;
+    height: 60px;
     flex-wrap: nowrap;
     gap: 20px;
     margin-bottom: 0;
     justify-content: space-between;
+    padding-left: 5px;
 }
 
 .fonctionnement{
@@ -371,33 +382,129 @@ p {
     margin-bottom: 0;
 }
 
+.cercle {
+    margin-right: 0;
+}
+
 .choixresto {
     padding: 0;
+    justify-content: flex-start;
+    gap: 15px
 }
 
 .compomenu {
     padding: 0;
+    justify-content: flex-start;
+    gap: 15px
+}
+
+.degust {
+    padding: 0;
+    justify-content: flex-start;
+    gap: 15px   
+}
+
+.menu {
+    margin-bottom: 0;
+}
+.compomenu {
+    padding: 0;
+}
+
+.degustation {
+    margin-bottom: 0;
 }
 
 .degust {
     padding: 0;
 }
 
-.gridcards {
-   margin: 50px 80px 30px 80px;
+.restaurantscards {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 80px;
 }
+
+
+.titresectionresto {
+    padding-left: 80px;
+}
+
+.gridcards {
+    display: flex;
+   margin: 50px 0 30px 0;
+    
+}
+
+.cardresto {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 
 .groupresto1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    gap: 50px;
    
 }
 
 .groupresto2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 50px;
 }
+
+
+
+
+/****** footer ***********/
+.gridfooter {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 80px;
+}
+
+.logofooter {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logofooter img {
+    object-fit: cover;
+    width: 125px;
+    height: auto;
+    filter: invert(100%);
+}
+
+.logoblanc {
+    padding-bottom: 20px;
+}
+
+.liensnav {
+    flex-direction:row;
+    gap: 15px;
+    padding-left: 0;
+    margin-right: 50px;
+}
+
+.containerlogotexte {
+    display: flex;
+}
+
 
 }
 
