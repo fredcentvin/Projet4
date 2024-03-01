@@ -123,6 +123,8 @@ h2 {
     justify-content: flex-start;
     flex-wrap: wrap;
     background-color: white;
+    margin-left: 20px;
+    margin-right: 15px;
 }
 
 .titrefonctionnement {
@@ -135,6 +137,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 25px;
+    margin-left: 5px;
 }
 
 .boutonrestaurants {
@@ -236,6 +239,8 @@ h2 {
     background-color: #f6f6f6 ;
     padding-bottom: 25px;
     padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .cardresto {
@@ -299,6 +304,7 @@ h2 {
     background-color: #353535;
     color:white;
     font-size: 14px;
+    padding-left: 20px;
 }
 
 .logofooter {
