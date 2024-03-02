@@ -20,7 +20,7 @@ a {
 }
 
 h3 {
-    font-size: 17px;
+    font-size: 16px;
     color: black;
 }
 
@@ -95,7 +95,7 @@ input {
 }
 
 
-/****** section thème ***********/
+/****** introduction ******/
 .gridintroduction {
     background-color: #f6f6f6;
     padding: 20px 15px 30px 15px;
@@ -106,7 +106,7 @@ h1{
     font-size: 22px;
 }
 
-h2 {
+h5 {
     text-align: center;
     font-weight: 50;
     font-size: 18px;
@@ -161,7 +161,6 @@ h2 {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .cercle {
@@ -182,7 +181,6 @@ h2 {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .degustation {
@@ -191,7 +189,6 @@ h2 {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;   
-
 }
 
 .choixresto {
@@ -237,7 +234,7 @@ h2 {
 }
 
 
-/****** cartes restaurants ***********/
+/****** restaurants ******/
 .titresectionresto {
     display: flex;
     width: 100%;
@@ -311,14 +308,13 @@ h2 {
     max-width: 100%;
     max-height: 100%;
     padding-right: 30px;
-   
-
 }
 
 .card {
     display: flex;
     flex-direction: column;
 }
+
 
 /****** footer ***********/
 .gridfooter {
@@ -392,12 +388,23 @@ p {
 /* desktop */
 @media (min-width: 1024px) {
 
+h1 {
+    font-size: 40px;
+}
 
+
+/***** header ****/
+.geographicposition {
+    box-shadow: unset;
+}
+
+
+/***** fonctionnement ****/
 .boutonchoix {
     width: 100%;
     height: 60px;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 0;
     justify-content: space-between;
     padding-left: 5px;
@@ -418,24 +425,25 @@ p {
 .choixresto {
     padding: 0;
     justify-content: flex-start;
-    gap: 15px
+    gap: 25px
 }
 
 .compomenu {
     padding: 0;
     justify-content: flex-start;
-    gap: 15px
+    gap: 25px
 }
 
 .degust {
     padding: 0;
     justify-content: flex-start;
-    gap: 15px   
+    gap: 25px   
 }
 
 .menu {
     margin-bottom: 0;
 }
+
 .compomenu {
     padding: 0;
 }
@@ -448,14 +456,15 @@ p {
     padding: 0;
 }
 
+
+/***** restaurants ****/
 .restaurantscards {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding-left: 80px;
     padding-right: 80px;
+    gap: 50px;
 }
-
 
 .titresectionresto {
     padding-left: 80px;
@@ -463,39 +472,59 @@ p {
 
 .gridcards {
     display: flex;
-    margin: 50px 0 30px 0;
-    padding: 15px 60px 20px 60px;
-    
+    margin: 50px 0 0px 0;
+    padding: 15px 60px 30px 60px; 
 }
 
 .cardresto {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-
 .groupresto1 {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;   
+    flex-direction: row;
+    display: flex; 
+    gap: 100px; 
 }
 
 .menilmontant {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    width: 50%;
 }
+
+.charonne {
+    display: flex;
+    flex-direction: column;
+    width: 50%;    
+}
+
 .groupresto2 {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.citerouge {
+    display: flex;
+    flex-direction: column;
+    width: 50%;  
+}
+
+.foliemericourt {
+    display: flex;
+    flex-direction: column;
+    width: 50%;  
 }
 
 
-
-
-/****** footer ***********/
+/****** footer ******/
 .gridfooter {
     display: flex;
     width: 100%;
