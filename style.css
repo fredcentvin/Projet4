@@ -72,6 +72,11 @@ h4 {
     height: 25px;
 }
 
+.retour {
+    display: flex;
+    width: 20%;
+}
+
 .geographicposition {
     display: flex;
     justify-content: center;
