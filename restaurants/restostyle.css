@@ -11,7 +11,7 @@
     --color4: #eafbff;
     --color5: #99e2d0;
     --color6: #fcc0ce;
-    --color7: #9747ff;
+    --color7: #9356dc;
 }
 
 a {
@@ -69,7 +69,8 @@ h5 {
     border: none;
     padding: 15px 10px 15px 10px;
     box-shadow: 0px 2px 5px gray ;
-    background-color: #9747ff;
+    background:linear-gradient(#ff79da,#9356dc);
+    flex-grow: 1;
 }
 
 
@@ -92,11 +93,12 @@ h5 {
 .cardglobal {
     display: flex;
     flex-direction: row;
-}
-
-.gridmenu {
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .entete {
@@ -104,20 +106,38 @@ h5 {
     flex-direction: row;
 }
 
-.photoresto {
+.photorestocard {
     display: flex;
+   
+}
+
+.photorestocard img {
     object-fit: cover;
-    max-height: 20%;
 }
 
 /****** menu***********/
 .gridmenu {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
 }
 
-.gridentree {
+.gridentrees {
     display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gridplats {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.griddesserts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
 }
 
 .entree {
@@ -127,12 +147,13 @@ h5 {
 
 .cardmenu {
     display: flex;
+    width: 100%;
 }
 
 /****** restaurants ******/
-.titresectionresto {
+.nomduresto {
     display: flex;
-    width: 100%;
+    width: 50%;
 }
 
 .badgerectangle {
@@ -154,29 +175,17 @@ h5 {
     margin-bottom: 15px;
 }
 
-.cardresto .card img {
-    width: 100%;
-    object-fit: cover;
-    height: 220px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin-top: 2px;
-    margin-bottom: 10px;
-}
-
-.card img {
-    object-fit:contain;
-}
-
 .card-content {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
-    padding-left: 5px;
-    padding-right: 5px;
     gap: 45px;
-    max-width: 100%;
-    max-height: 100%;
+}
+
+.prix {
+    display: flex;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-right: 10px;
 }
 
 .resto-text {
@@ -194,26 +203,30 @@ h5 {
     flex-direction: column;
     padding-left: 10px;
     padding-bottom: 5px;
+    justify-content: center;
 }
 
 .coeurcard {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
-    max-height: 100%;
-    padding-right: 30px;
+    align-items: flex-end;
+    width: 50%;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .commande {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
