@@ -14,10 +14,7 @@
     --color7: #9356dc;
 }
 
-main {
-    position: relative;
-    z-index: 1;
-}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -174,12 +171,6 @@ h5 {
 .nomduresto {
     display: flex;
     width: 50%;
-}
-
-.badgerectangle {
-    display: flex;
-    background-color: var(--color5);
-    color: green;
 }
 
 .gridcards {
