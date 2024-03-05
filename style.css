@@ -19,14 +19,19 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-weight: 200;
+}
+
 h3 {
     font-size: 16px;
     color: black;
+    margin: 0;
 }
 
 h4 {
    
-    color:rgb(20, 20, 20);
+    color:black;
     font-weight: 50;
 }
 
@@ -42,7 +47,7 @@ h4 {
 
 .fa-heart {
     color:var(--color7);
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .fa-mobile-screen-button {
@@ -72,6 +77,11 @@ h4 {
     height: 25px;
 }
 
+.retour {
+    display: flex;
+    width: 20%;
+}
+
 .geographicposition {
     display: flex;
     justify-content: center;
@@ -79,7 +89,6 @@ h4 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px;
-    box-shadow: 2px 0 2px  gray;
     box-shadow: inset 0 1px 5px gray;
 }
 
@@ -173,6 +182,8 @@ h5 {
     height: 20px;
     color: white; 
     margin-left: -7px;
+    position: absolute;
+    left: 25px;
 }
 
 .menu {
@@ -192,45 +203,39 @@ h5 {
 }
 
 .choixresto {
-    height: 60px;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    padding: 15px 80px 15px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 15px 15px 25px;
     border-radius: 12px;
-    font-size: 14px;
     border: none;
     background-color: #f6f6f6;
-    box-shadow: 0px 2px 5px gray;
+    box-shadow: 0px 2px 7px gray;
 }
 
 .compomenu {
-    height: 60px;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    padding: 15px 80px 15px 0;
+    display: inline-flex;
+    align-items: center;
+    gap:15px;
+    padding: 15px 15px 15px 25px;
     border-radius: 12px;
-    font-size: 14px;  
     border: none;
     background-color: #f6f6f6;
-    box-shadow: 0px 2px 5px gray;
+    box-shadow: 0px 2px 7px gray;
 }
 
 .degust {
-    height: 60px;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    padding: 15px 80px 15px 0;
-    border-radius: 12px;
-    font-size: 14px;   
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 15px 15px 25px;
+    border-radius: 12px;  
     border: none;
     background-color: #f6f6f6;  
-    box-shadow: 0px 2px 5px grey;
+    box-shadow: 0px 2px 7px grey;
 }
 
 
@@ -242,8 +247,15 @@ h5 {
 
 .badgerectangle {
     display: flex;
+    align-items: center;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: var(--color5);
     color: green;
+    position: absolute;
+    top:15px;
+    right: 15px;
 }
 
 .gridcards {
@@ -257,6 +269,8 @@ h5 {
 .cardresto {
     margin-top: 15px;
     margin-bottom: 15px;
+    position:relative;
+    
 }
 
 .cardresto .card img {
@@ -282,6 +296,8 @@ h5 {
     gap: 45px;
     max-width: 100%;
     max-height: 100%;
+    position: relative;
+
 }
 
 .resto-text {
@@ -307,12 +323,13 @@ h5 {
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+
 }
 
 
