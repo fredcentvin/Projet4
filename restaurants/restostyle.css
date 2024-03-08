@@ -14,6 +14,15 @@
     --color7: #9356dc;
 }
 
+body {
+    margin: 0;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -58,6 +67,7 @@ h5 {
 
 .img {
     object-fit: cover;
+    max-width: 100%;
 }
 
 .card img {
@@ -122,6 +132,9 @@ h5 {
     padding-right: 10px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
+
+
 }
 
 .entete {
@@ -137,8 +150,10 @@ h5 {
 
 .photorestocard img {
     object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 275px;
+
+
 }
 
 /****** menu***********/
@@ -274,6 +289,7 @@ h5 {
     color:white;
     font-size: 14px;
     padding-left: 15px;
+
 }
 
 .logofooter {
