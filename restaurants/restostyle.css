@@ -352,11 +352,46 @@ h1 {
 
 
 /***** header ****/
-
+.containerheader {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 
 /***** restaurants ****/
+.photorestocard img {
+    height: 385px;
+}
 
+.entete {
+    justify-content: center;
+    gap: 20px;
+}
+
+.titre {
+    width: 10%;
+}
+
+.cardglobal {
+    margin-left: 220px;
+    margin-right: 220px;
+    top: -25px;
+}
+
+.gridentrees {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.gridplats {
+    padding-left: 200px;
+    padding-right: 200px;
+} 
+
+.griddesserts {
+    padding-left: 200px;
+    padding-right: 200px;
+}
 
 
 /****** footer ******/
