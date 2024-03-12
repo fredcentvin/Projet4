@@ -116,6 +116,10 @@ input {
 }
 
 
+
+/****** positionnement ******/
+
+
 /****** introduction ******/
 .gridintroduction {
     background-color: #f6f6f6;
@@ -280,6 +284,8 @@ input {
     width: 100%;
     background-color: #f6f6f6;
     padding: 15px 20px 25px 20px;
+
+
 }
 
 .cardresto {
