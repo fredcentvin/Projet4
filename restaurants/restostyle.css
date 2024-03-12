@@ -104,6 +104,7 @@ h5 {
 .retour {
     display: flex;
     width: 10%;
+    padding-left: 15px;
 }
 
 .logo1 {
@@ -307,7 +308,7 @@ h5 {
     padding-top: 15px;
     padding-left: 10px;
     filter: invert(100%);
-    width: 20%;
+    width: 30%;
     height: auto;
 }
 

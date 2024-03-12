@@ -19,8 +19,14 @@ a {
     text-decoration: none;
 }
 
+
+h1{
+    text-align: center;
+    font-size: 22px;
+}
+
 h2 {
-    font-weight: 200;
+    font-weight: 600;
 }
 
 h3 {
@@ -33,6 +39,13 @@ h4 {
    
     color:black;
     font-weight: 50;
+}
+
+h5 {
+    text-align: center;
+    font-weight: 50;
+    font-size: 18px;
+    color: rgb(170, 169, 169);
 }
 
 .card {
@@ -109,17 +122,6 @@ input {
     padding: 20px 15px 30px 15px;
 }
 
-h1{
-    text-align: center;
-    font-size: 22px;
-}
-
-h5 {
-    text-align: center;
-    font-weight: 50;
-    font-size: 18px;
-    color: rgb(170, 169, 169);
-}
 
 .restaurationchoix {
     display: flex;
@@ -169,6 +171,7 @@ h5 {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
 .cercle {
@@ -191,6 +194,9 @@ h5 {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 600;
+
 }
 
 .degustation {
@@ -199,44 +205,53 @@ h5 {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;   
+    font-size: 14px;
+    font-weight: 600;
+
 }
 
 .choixresto {
     width: 100%;
     display: inline-flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     padding: 15px 15px 15px 25px;
     border-radius: 12px;
     border: none;
     background-color: #f6f6f6;
     box-shadow: 0px 2px 7px gray;
     font-weight: unset;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 14px;
+
 }
 
 .compomenu {
     width: 100%;
     display: inline-flex;
     align-items: center;
-    gap:15px;
+    gap:20px;
     padding: 15px 15px 15px 25px;
     border-radius: 12px;
     border: none;
     background-color: #f6f6f6;
-    box-shadow: 0px 2px 7px gray;
+    box-shadow: 0px 2px 7px gray;    font-weight: 600;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .degust {
     width: 100%;
     display: inline-flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     padding: 15px 15px 15px 25px;
     border-radius: 12px;  
     border: none;
     background-color: #f6f6f6;  
     box-shadow: 0px 2px 7px grey;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 
@@ -410,6 +425,10 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-weight: 600;
+}
+
 
 /***** header ****/
 .geographicposition {
@@ -438,24 +457,32 @@ h1 {
 
 .cercle {
     margin-right: 0;
+    position: unset;
+    margin-left: -10px;
 }
 
 .choixresto {
+    font-size: 18px;
+    font-weight: 600;
     padding: 0;
-    justify-content: flex-start;
-    gap: 20px
+    justify-content:flex-start;
+    gap: 30px
 }
 
 .compomenu {
+    font-size: 18px;
+    font-weight: 600;
     padding: 0;
     justify-content: flex-start;
-    gap: 20px
+    gap: 30px
 }
 
 .degust {
+    font-size: 18px;
+    font-weight: 600;
     padding: 0;
     justify-content: flex-start;
-    gap: 20px   
+    gap: 30px   
 }
 
 .menu {
