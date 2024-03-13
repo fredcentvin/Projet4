@@ -372,9 +372,21 @@ h1 {
     width: 10%;
 }
 
+.calque {
+  background-color: white;
+  display: flex;
+  margin-left: 250px;
+  margin-right: 250px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.masque {
+    background-color: #f6f6f6;
+}
+
 .cardglobal {
-    margin-left: 220px;
-    margin-right: 220px;
     top: -25px;
 }
 
@@ -409,6 +421,7 @@ h1 {
     display: flex;
     max-width: 100%;
     max-height: 100%;
+    padding-right: 50px;
 }
 
 .logofooter img {
@@ -424,15 +437,20 @@ h1 {
 
 .liensnav {
     flex-direction:row;
-    gap: 15px;
     padding-left: 0;
     margin-right: 50px;
 }
 
 .containerlogotexte {
     display: flex;
+    padding-right: 10px;
 }
 
+.centrage {
+    display: flex;
+    gap: 8px;
+    margin-left: 20px;
 
+}
 }
 
