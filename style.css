@@ -2,6 +2,7 @@
 * {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    margin: 0;
 }
 
 :root {
@@ -23,6 +24,7 @@ a {
 h1{
     text-align: center;
     font-size: 22px;
+    padding-bottom: 15px;
 }
 
 h2 {
@@ -45,7 +47,7 @@ h5 {
     text-align: center;
     font-weight: 50;
     font-size: 18px;
-    color: rgb(170, 169, 169);
+    color: rgb(79, 78, 78);
 }
 
 .card {
@@ -57,9 +59,14 @@ h5 {
     object-fit: cover;
 }
 
-.fa-heart {
-    color:var(--color7);
-    font-size: 25px;
+.fa-regular.fa-heart {
+    color: black;
+    font-size: 30px;  
+    
+}
+
+.fa-regular.fa-heart:active {
+    color: #ff79da;
 }
 
 .fa-mobile-screen-button {
@@ -101,7 +108,7 @@ h5 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px;
-    box-shadow: inset 0 1px 5px gray;
+    box-shadow: inset 0 1px 5px rgb(179, 179, 179);
 }
 
 input {
@@ -116,7 +123,6 @@ input {
 }
 
 
-
 /****** positionnement ******/
 
 
@@ -126,11 +132,11 @@ input {
     padding: 20px 15px 30px 15px;
 }
 
-
 .restaurationchoix {
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .exploration {
@@ -144,6 +150,10 @@ input {
     background:linear-gradient(#ff79da,#9356dc);
 }
 
+.exploration:hover {
+    opacity: 0.9;
+}
+
 
 /****** fonctionnement ***********/
 .fonctionnement {
@@ -154,19 +164,22 @@ input {
     background-color: white;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 .titrefonctionnement {
   display: flex;
   width: 100%;
+  padding-bottom: 15px;
 }
 
 .boutonchoix {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     gap: 20px;
+    padding-left: 10px;
 }
 
 .boutonrestaurants {
@@ -175,7 +188,6 @@ input {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .cercle {
@@ -200,7 +212,6 @@ input {
     flex-wrap: wrap;
     font-size: 14px;
     font-weight: 600;
-
 }
 
 .degustation {
@@ -211,7 +222,6 @@ input {
     flex-wrap: wrap;   
     font-size: 14px;
     font-weight: 600;
-
 }
 
 .choixresto {
@@ -223,11 +233,10 @@ input {
     border-radius: 12px;
     border: none;
     background-color: #f6f6f6;
-    box-shadow: 0px 2px 7px gray;
+    box-shadow: 0px 2px 7px rgb(179, 179, 179);
     font-weight: unset;
     font-weight: 600;
     font-size: 14px;
-
 }
 
 .compomenu {
@@ -239,7 +248,7 @@ input {
     border-radius: 12px;
     border: none;
     background-color: #f6f6f6;
-    box-shadow: 0px 2px 7px gray;    font-weight: 600;
+    box-shadow: 0px 2px 7px rgb(179, 179, 179);   
     font-size: 14px;
     font-weight: 600;
 }
@@ -253,7 +262,7 @@ input {
     border-radius: 12px;  
     border: none;
     background-color: #f6f6f6;  
-    box-shadow: 0px 2px 7px grey;
+    box-shadow: 0px 2px 7px rgb(179, 179, 179);
     font-size: 14px;
     font-weight: 600;
 }
@@ -283,16 +292,13 @@ input {
     flex-direction: column;
     width: 100%;
     background-color: #f6f6f6;
-    padding: 15px 20px 25px 20px;
-
-
+    padding: 35px 20px 35px 20px;
 }
 
 .cardresto {
     margin-top: 15px;
     margin-bottom: 15px;
-    position:relative;
-    
+    position:relative;    
 }
 
 .cardresto .card img {
@@ -319,7 +325,6 @@ input {
     max-width: 100%;
     max-height: 100%;
     position: relative;
-
 }
 
 .resto-text {
@@ -351,7 +356,6 @@ input {
 .card {
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -359,10 +363,11 @@ input {
 .gridfooter {
     display: flex;
     flex-direction: column;
-    background-color: #353535;
+    background-color: #4a4a4a;
     color:white;
     font-size: 14px;
     padding-left: 15px;
+    padding-top: 10px;
 }
 
 .logofooter {
@@ -380,7 +385,7 @@ input {
     padding-top: 15px;
     padding-left: 10px;
     filter: invert(100%);
-    width: 20%;
+    width: 30%;
     height: auto;
 }
 
@@ -392,6 +397,7 @@ input {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    padding-bottom: 20px;
 }
 
 .containerlogotexte {
@@ -583,25 +589,21 @@ h2 {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px 25px 20px 80px ;
-
+    padding: 20px 45px 20px 80px ;
 }
 
 .logofooter {
     display: flex;
-    max-width: 100%;
-    max-height: 100%;
+    padding-bottom: 0;
 }
 
 .logofooter img {
     object-fit: cover;
-    width: 125px;
-    height: auto;
-    filter: invert(100%);
+    width: 100px;
 }
 
 .logoblanc {
-    padding-bottom: 20px;
+
 }
 
 .liensnav {
@@ -610,12 +612,35 @@ h2 {
     padding-left: 0;
     margin-right: 50px;
     align-items: center;
+    padding-bottom: 0;
+    margin-top: 20px;
 }
 
 .containerlogotexte {
     display: flex;
+    padding-right: 15px;
 }
 
+.centrage {
+    display: flex;
+    gap: 15px;
+    margin-left: 40px;  
+    padding-right: 20px;
+    align-items: center;
+}
 
 }
 
+@media (min-width:1440px) {
+html {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+}
