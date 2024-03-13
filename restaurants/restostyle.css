@@ -70,7 +70,7 @@ h5 {
 }
 
 .fa-heart {
-    color:var(--color7);
+    color:black;
     font-size: 20px;
 }
 
@@ -85,6 +85,10 @@ h5 {
     box-shadow: 0px 2px 5px gray ;
     background:linear-gradient(#ff79da,#9356dc);
     flex-grow: 1;
+}
+
+.actioncommande:hover {
+    opacity: 0.9;
 }
 
 
@@ -450,7 +454,6 @@ h1 {
     display: flex;
     gap: 8px;
     margin-left: 20px;
-
 }
 }
 
