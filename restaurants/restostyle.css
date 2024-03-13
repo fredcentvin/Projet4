@@ -18,11 +18,6 @@ body {
     margin: 0;
 }
 
-main {
-    position: relative;
-    z-index: 1;
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -35,7 +30,7 @@ h1{
 
 h2 {
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 100;
     margin-bottom: 0;
 }
 
@@ -164,22 +159,28 @@ h5 {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 15px;
 }
 
 .gridplats {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 15px;
 }
 
 .titre {
     padding-left: 10px;
+    padding-bottom: 7px;
+    border-bottom:5px solid var(--color5);
+    width: 15%;
 }
 
 .griddesserts {
     display: flex;
     flex-direction: column;
     gap: 15px; 
+    margin-bottom: 15px;
 }
 
 .entree {
@@ -274,7 +275,6 @@ h5 {
     justify-content: center;
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 
@@ -352,11 +352,58 @@ h1 {
 
 
 /***** header ****/
-
+.containerheader {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 
 /***** restaurants ****/
+.photorestocard img {
+    height: 385px;
+}
 
+.entete {
+    justify-content: center;
+    gap: 20px;
+}
+
+.titre {
+    width: 10%;
+}
+
+.calque {
+  background-color: white;
+  display: flex;
+  margin-left: 250px;
+  margin-right: 250px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.masque {
+    background-color: #f6f6f6;
+}
+
+.cardglobal {
+    top: -25px;
+}
+
+.gridentrees {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.gridplats {
+    padding-left: 200px;
+    padding-right: 200px;
+} 
+
+.griddesserts {
+    padding-left: 200px;
+    padding-right: 200px;
+}
 
 
 /****** footer ******/
@@ -374,6 +421,7 @@ h1 {
     display: flex;
     max-width: 100%;
     max-height: 100%;
+    padding-right: 50px;
 }
 
 .logofooter img {
@@ -389,15 +437,20 @@ h1 {
 
 .liensnav {
     flex-direction:row;
-    gap: 15px;
     padding-left: 0;
     margin-right: 50px;
 }
 
 .containerlogotexte {
     display: flex;
+    padding-right: 10px;
 }
 
+.centrage {
+    display: flex;
+    gap: 8px;
+    margin-left: 20px;
 
+}
 }
 

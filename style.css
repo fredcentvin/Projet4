@@ -465,6 +465,7 @@ h2 {
     margin-right: 0;
     position: unset;
     margin-left: -10px;
+    align-items: normal;
 }
 
 .choixresto {
@@ -608,6 +609,7 @@ h2 {
     gap: 15px;
     padding-left: 0;
     margin-right: 50px;
+    align-items: center;
 }
 
 .containerlogotexte {
