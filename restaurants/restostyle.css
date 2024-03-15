@@ -164,7 +164,8 @@ h5 {
     background-color: var(--color5);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    height: max-content;
+    background: white;
+    align-items: center;
 }
 
 .casecachee {
@@ -184,6 +185,7 @@ h5 {
 .checkbox {
     padding-right: 5px;
 }
+ 
 
 .gridentrees {
     display: flex;
@@ -291,6 +293,12 @@ h5 {
     justify-content: center;
     align-items: flex-end;
     padding-right: 5px;
+}
+
+.fa-heart:active{
+  color:var(--color7);
+  fill: #9356dc;
+  fill-opacity: var(--color7);
 }
 
 .card {
