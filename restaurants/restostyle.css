@@ -25,7 +25,7 @@ a {
 
 h1{
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 h2 {
@@ -159,23 +159,32 @@ h5 {
     width: 100%;
 }
 
+.casemobile {
+    display: flex;
+    background-color: var(--color5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: max-content;
+}
+
 .casecachee {
     display: flex;
-    background-color: #89c8fa;
-    border-left: 2px solid black;
-
+    background-color:var(--color5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 30px 4px 30px 10px;
 }
 
-input:checked {
- outline: none;
-    border: solid green 2px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-
-
+.fa-circle-check {
+    color: var(--color5);
+    font-size: 18px;
+    background-color:white ;
 }
+
+.checkbox {
+    padding-right: 5px;
+}
+
 .gridentrees {
     display: flex;
     flex-direction: column;
@@ -315,7 +324,7 @@ input:checked {
     align-items: stretch;
     max-width: 100%;
     max-height: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .logofooter img {
@@ -332,6 +341,7 @@ input:checked {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .containerlogotexte {
@@ -363,9 +373,22 @@ p {
 }
 
 
+@media (min-width: 768px) {
+
+}
+
+
 
 /******* desktop *******/
 @media (min-width: 1024px) {
+
+body {
+    max-width: 1420px;
+}
+
+.logo1 {
+    padding-right: 100px;
+}
 
 h1 {
     font-size: 40px;
@@ -386,7 +409,7 @@ h1 {
 
 .entete {
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .titre {
@@ -396,8 +419,8 @@ h1 {
 .calque {
   background-color: white;
   display: flex;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: 200px;
+  margin-right: 200px;
   display: flex;
   flex-direction: column;
 
@@ -407,23 +430,31 @@ h1 {
     background-color: #f6f6f6;
 }
 
+.casecachee {
+    padding: 30px 20px 30px 20px;
+}
+
+.checkbox {
+    padding-right: 5px;
+}
+
 .cardglobal {
     top: -25px;
 }
 
 .gridentrees {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .gridplats {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 } 
 
 .griddesserts {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 
@@ -472,5 +503,15 @@ h1 {
     gap: 8px;
     margin-left: 20px;
 }
+}
+
+
+
+@media (min-width:1440px) {
+body {
+    margin-left: auto;
+    margin-right: auto;
+}
+    
 }
 
