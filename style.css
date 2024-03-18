@@ -67,6 +67,7 @@ h5 {
 
 .fa-regular.fa-heart:active {
     color: #ff79da;
+    font-weight: 900;
 }
 
 .fa-mobile-screen-button {
