@@ -58,12 +58,10 @@ h5 {
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba);
-    z-index: 1;
 }
 
 .card :active .casecachee {
-    display: flex;
-    
+    display: flex;    
 }
 
 .img {
@@ -79,7 +77,6 @@ h5 {
     color:black;
     font-size: 20px;
 }
-
 
 .actioncommande {
     height: 50px;
@@ -181,13 +178,11 @@ h5 {
     background-color:var(--color5);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 22px 15px 22px 15px;
+    padding: 20px 4px 20px 10px;
     display: none;
-    transform-origin:  right;
-    transition-duration: 0s;
 }
 
-#macaron, #escargots, #canard, #oeuf, #boeuf, #queue, #turbot, #paris, #mousse{
+#macaron {
     display: none;
 }
 
@@ -197,10 +192,9 @@ input .macaron + label::before {
 }
 
 .fa-circle-check {
-    color: var(--color5);
+    color: unset;
     font-size: 18px;
     filter:var(--color5);
-    background-color: white;
 
 }
 
@@ -316,7 +310,6 @@ input .macaron + label::before {
   color:var(--color7);
   fill: #9356dc;
   fill-opacity: var(--color7);
-  font-weight: 900;
 }
 
 .card {
@@ -422,9 +415,7 @@ h1 {
 
 .card:hover .casecachee {
     display: flex;
-    transform: translateX(1);
-    transition-duration: 500ms;
-    z-index: 1;
+
 }
 
 /***** header ****/
@@ -463,8 +454,7 @@ h1 {
 }
 
 .casecachee {
-    padding: 22px 20px 22px 20px;
-   
+    padding: 20px 20px 20px 20px;
 }
 
 .checkbox {
