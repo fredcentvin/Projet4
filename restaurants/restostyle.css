@@ -62,8 +62,7 @@ h5 {
 }
 
 .card :active .casecachee {
-    display: flex;
-    
+    display: flex;  
 }
 
 .img {
@@ -168,23 +167,18 @@ h5 {
 
 .casemobile {
     display: flex;
-    background-color: var(--color5);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     background: white;
-    align-items: center;
-    position: relative;    
+    align-items: center;   
 }
 
 .casecachee {
-    display: flex;
     background-color:var(--color5);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 22px 15px 22px 15px;
-    display: none;
-    transform-origin:  right;
-    transition-duration: 0s;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 200ms cubic-bezier(.52,0,.07,1);
 }
 
 #macaron, #escargots, #canard, #oeuf, #boeuf, #queue, #turbot, #paris, #mousse{
@@ -276,7 +270,10 @@ input .macaron + label::before {
     display: flex;
     font-size: 15px;
     padding-right: 10px;
+    transform: translateX(60px, 0);
 }
+
+
 
 .symboleeuro {
     font-size: 15px;
@@ -422,9 +419,8 @@ h1 {
 
 .card:hover .casecachee {
     display: flex;
-    transform: translateX(1);
-    transition-duration: 500ms;
-    z-index: 1;
+    transform: scaleX(1);
+    
 }
 
 /***** header ****/
@@ -499,7 +495,6 @@ h1 {
     align-items: center;
     justify-content: flex-start;
     padding: 20px 25px 20px 80px ;
-
 }
 
 .logofooter {
@@ -536,6 +531,7 @@ h1 {
     gap: 8px;
     margin-left: 20px;
 }
+
 }
 
 

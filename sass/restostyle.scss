@@ -89,10 +89,9 @@ h5 {
     box-shadow: 0px 2px 5px gray ;
     background:linear-gradient(#ff79da,#9356dc);
     flex-grow: 1;
-}
-
-.actioncommande:hover {
-    opacity: 0.9;
+    &:hover {
+        opacity: 0.9;
+    }
 }
 
 
@@ -180,6 +179,9 @@ h5 {
     border-bottom-right-radius: 20px;
     padding: 20px 4px 20px 10px;
     display: none;
+    transform: scaleX(0);
+    transition-property: transform;
+    transition-duration: 350ms;
 }
 
 #macaron {
@@ -310,6 +312,7 @@ input .macaron + label::before {
   color:var(--color7);
   fill: #9356dc;
   fill-opacity: var(--color7);
+  font-weight: 900;
 }
 
 .card {
@@ -415,7 +418,9 @@ h1 {
 
 .card:hover .casecachee {
     display: flex;
-
+    transform-origin: 100% 50%;
+    transform:scaleX(1);
+    transform: translateX(right);
 }
 
 /***** header ****/
