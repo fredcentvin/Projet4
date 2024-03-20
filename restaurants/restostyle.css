@@ -36,13 +36,13 @@ h2 {
 
 h3 {
     font-family: "roboto";
-    font-size: 18px;
+    font-size: 17px;
     color: black;
 }
 
 h4 {
     font-family: "roboto";
-    font-size: 15px;
+    font-size: 14px;
     color:black;
     font-weight: 300;
 }
@@ -54,15 +54,30 @@ h5 {
     color: rgb(170, 169, 169);
 }
 
+h6 {
+    font-size: 14px;
+}
+
 .card {
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba);
-    z-index: 1;
 }
 
-.card :active .casecachee {
-    display: flex;  
+.card:active .casecachee {
+    display: flex;
+    transform: scale(1);  
+}
+
+.card:active .prix {
+    transform: translateX(-50px);  
+    margin-left: 40px;
+}
+
+.card:active .card-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .img {
@@ -77,6 +92,8 @@ h5 {
 .fa-heart {
     color:black;
     font-size: 20px;
+    opacity: 0;
+    transition: transform 200ms cubic-bezier(.52,0,.07,1);
 }
 
 
@@ -128,7 +145,16 @@ h5 {
 
 
 /****** position ***********/
-
+.calque {
+    background-color: white;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+}
+  
+  .masque {
+      background-color: #f6f6f6;
+}
 
 
 /****** introduction ******/
@@ -171,15 +197,13 @@ h5 {
     border-bottom-right-radius: 20px;
     background: white;
     align-items: center;  
-
-
 }
 
 .casecachee {
     background-color:var(--color5);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 22px 15px 22px 15px;
+    padding: 22px 18px 22px 18px;
     transform-origin: right;
     transform:scaleX(0);
     transition: transform 200ms cubic-bezier(.52,0,.07,1);
@@ -199,7 +223,6 @@ input .macaron + label::before {
     font-size: 18px;
     filter:var(--color5);
     background-color: white;
-
 }
 
 .gridentrees {
@@ -268,17 +291,14 @@ input .macaron + label::before {
     display: flex;
     justify-content: space-between;
     align-items:center;   
-
 }
 
 .prix {
     display: flex;
-    font-size: 15px;
-    padding-right: 10px;
+    font-size: 14px;
     position: relative;
-    left: 60px;
+    left: 40px;
     transition: transform 200ms cubic-bezier(.52,0,.07,1);
-
 }
 
 
@@ -288,17 +308,23 @@ input .macaron + label::before {
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 .resto-text {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .resto-petittexte {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .card-txt {
@@ -322,6 +348,7 @@ input .macaron + label::before {
   fill: #9356dc;
   fill-opacity: var(--color7);
   font-weight: 900;
+  opacity: 1;
 }
 
 .card {
@@ -335,7 +362,7 @@ input .macaron + label::before {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 
@@ -404,7 +431,10 @@ p {
 }
 
 
+
+/******* tablette *******/
 @media (min-width: 768px) {
+
 
 }
 
@@ -431,7 +461,7 @@ h1 {
 }
 
 .card:hover .prix {
-    transform: translateX(-60px);
+    transform: translateX(-55px);
 }
 
 
@@ -463,16 +493,18 @@ h1 {
   margin-right: 200px;
   display: flex;
   flex-direction: column;
-
 }
 
 .masque {
     background-color: #f6f6f6;
 }
 
+
 .casecachee {
     padding: 22px 20px 22px 20px;
-   
+    transform-origin: right;
+    transform:scaleX(0);
+    transition: transform 200ms cubic-bezier(.52,0,.07,1);
 }
 
 .checkbox {
@@ -496,6 +528,12 @@ h1 {
 .griddesserts {
     padding-left: 100px;
     padding-right: 100px;
+}
+
+.prix {
+    position: relative;
+    left: 45px;
+    transition: transform 200ms cubic-bezier(.52,0,.07,1);
 }
 
 
@@ -548,6 +586,7 @@ h1 {
 
 
 
+/******* large desktop *******/
 @media (min-width:1440px) {
 body {
     margin-left: auto;
