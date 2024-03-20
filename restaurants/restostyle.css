@@ -167,8 +167,12 @@ h5 {
 
 .casemobile {
     display: flex;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     background: white;
-    align-items: center;   
+    align-items: center;  
+
+
 }
 
 .casecachee {
@@ -177,7 +181,7 @@ h5 {
     border-bottom-right-radius: 20px;
     padding: 22px 15px 22px 15px;
     transform-origin: right;
-    transform: scaleX(0);
+    transform:scaleX(0);
     transition: transform 200ms cubic-bezier(.52,0,.07,1);
 }
 
@@ -264,13 +268,17 @@ input .macaron + label::before {
     display: flex;
     justify-content: space-between;
     align-items:center;   
+
 }
 
 .prix {
     display: flex;
     font-size: 15px;
     padding-right: 10px;
-    transform: translateX(60px, 0);
+    position: relative;
+    left: 60px;
+    transition: transform 200ms cubic-bezier(.52,0,.07,1);
+
 }
 
 
@@ -417,11 +425,15 @@ h1 {
     font-size: 40px;
 }
 
-.card:hover .casecachee {
+.card:hover .casecachee{
     display: flex;
-    transform: scaleX(1);
-    
+    transform: scaleX(1);    
 }
+
+.card:hover .prix {
+    transform: translateX(-60px);
+}
+
 
 /***** header ****/
 .containerheader {
