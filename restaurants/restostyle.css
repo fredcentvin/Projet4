@@ -305,7 +305,7 @@ input .macaron + label::before {
 
 .symboleeuro {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 15px;
@@ -490,7 +490,7 @@ h1 {
 }
 
 .titre {
-    width: 10%;
+    width: 8%;
 }
 
 .calque {

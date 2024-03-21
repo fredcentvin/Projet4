@@ -211,7 +211,7 @@ input {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -221,7 +221,7 @@ input {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;   
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -237,7 +237,7 @@ input {
     box-shadow: 0px 2px 7px rgb(179, 179, 179);
     font-weight: unset;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .compomenu {
@@ -250,7 +250,7 @@ input {
     border: none;
     background-color: #f6f6f6;
     box-shadow: 0px 2px 7px rgb(179, 179, 179);   
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -264,7 +264,7 @@ input {
     border: none;
     background-color: #f6f6f6;  
     box-shadow: 0px 2px 7px rgb(179, 179, 179);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -476,7 +476,7 @@ h2 {
 }
 
 .choixresto {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     padding: 0;
     justify-content:flex-start;
@@ -484,7 +484,7 @@ h2 {
 }
 
 .compomenu {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     padding: 0;
     justify-content: flex-start;
@@ -492,7 +492,7 @@ h2 {
 }
 
 .degust {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     padding: 0;
     justify-content: flex-start;
@@ -527,6 +527,8 @@ h2 {
 
 .titresectionresto {
     padding-left: 80px;
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 
 .gridcards {
