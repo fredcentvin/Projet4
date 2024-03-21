@@ -93,7 +93,7 @@ h6 {
     color:black;
     font-size: 20px;
     opacity: 0.5;
-    transition: transform 200ms cubic-bezier(.52,0,.07,1);
+    transition: transform 500ms cubic-bezier(.52,0,.07,1);
 }
 
 
@@ -345,8 +345,6 @@ input .macaron + label::before {
 
 .fa-heart:active{
   color:var(--color7);
-  fill: #9356dc;
-  fill-opacity: var(--color7);
   font-weight: 900;
   opacity: 1;
 }
@@ -465,6 +463,31 @@ h1 {
 }
 
 
+
+
+/***** animation ****/
+
+@keyframes entrees {
+    0%  {
+        transform-origin: right;
+}
+    50% {
+        transform: scaleX (0.5);
+}
+    100% {
+        transform: scaleX(1);
+}
+}
+
+@keyframes plats {
+    
+}
+
+@keyframes desserts {
+    
+}
+
+
 /***** header ****/
 .containerheader {
     padding-top: 10px;
@@ -478,7 +501,6 @@ h1 {
 }
 
 .fa-heart {
-
     font-size: 28px;
     opacity: 0.5;
     transition: transform 200ms cubic-bezier(.52,0,.07,1);
@@ -490,7 +512,7 @@ h1 {
 }
 
 .titre {
-    width: 8%;
+    width: 7%;
 }
 
 .calque {
@@ -506,6 +528,10 @@ h1 {
     background-color: #f6f6f6;
 }
 
+.casecachee i {
+    outline: unset;
+
+}
 
 .casecachee {
     padding: 22px 20px 22px 20px;
@@ -525,6 +551,7 @@ h1 {
 .gridentrees {
     padding-left: 100px;
     padding-right: 100px;
+    animation: entrees 3000ms;
 }
 
 .gridplats {
@@ -551,7 +578,7 @@ h1 {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px 25px 20px 80px ;
+    padding: 40px 25px 0px 80px ;
 }
 
 .logofooter {

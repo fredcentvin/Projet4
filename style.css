@@ -305,7 +305,7 @@ input {
 .cardresto .card img {
     width: 100%;
     object-fit: cover;
-    height: 220px;
+    height: 170px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 2px;
@@ -435,17 +435,30 @@ p {
 @media (min-width: 1024px) {
 
 h1 {
-    font-size: 40px;
+    font-size: 34px;
+    font-weight: 900;
 }
 
 h2 {
+    font-size: 18px;
     font-weight: 600;
 }
 
 
 /***** header ****/
+.logo1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .geographicposition {
     box-shadow: unset;
+    padding-left: 65px;
+}
+
+.searchbar {
+    display: flex;
+    gap: 15px;
 }
 
 
@@ -457,11 +470,12 @@ h2 {
     gap: 30px;
     margin-bottom: 0;
     justify-content: space-between;
-    padding-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .fonctionnement{
-    margin: 30px 140px 30px 140px;
+    margin: 40px 100px 30px 100px;
 }
 
 .boutonrestaurants {
@@ -472,31 +486,31 @@ h2 {
     margin-right: 0;
     position: unset;
     margin-left: -10px;
-    align-items: normal;
 }
 
 .choixresto {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     padding: 0;
     justify-content:flex-start;
-    gap: 30px
+    flex-wrap: nowrap;
+    gap: 15px;
 }
 
 .compomenu {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     padding: 0;
     justify-content: flex-start;
-    gap: 30px
+    flex-wrap: nowrap;
 }
 
 .degust {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     padding: 0;
     justify-content: flex-start;
-    gap: 30px   
+    flex-wrap: nowrap;  
 }
 
 .menu {
@@ -504,6 +518,7 @@ h2 {
 }
 
 .compomenu {
+    flex-wrap: nowrap;
     padding: 0;
 }
 
@@ -520,13 +535,13 @@ h2 {
 .restaurantscards {
     display: flex;
     flex-direction: column;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
     gap: 50px;
 }
 
 .titresectionresto {
-    padding-left: 80px;
+    padding-left: 40px;
     padding-bottom: 30px;
     padding-top: 20px;
 }
@@ -630,7 +645,12 @@ h2 {
 
 }
 
-@media (min-width:1440px) {
+@media (min-width:1441px) {
+* {
+    margin: 0;
+    padding: 0;
+} 
+
 html {
     display: flex;
     margin-left: auto;
@@ -638,6 +658,7 @@ html {
 }
 
 body {
+    width: 1440px;
     margin-right: auto;
     margin-left: auto;
 }
