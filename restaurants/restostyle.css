@@ -490,7 +490,20 @@ p {
 
 /******* tablette *******/
 @media (min-width: 768px) {
-
+    .gridentrees {
+        padding-left: 100px;
+        padding-right: 100px; 
+    }
+    
+    .gridplats {
+        padding-left: 100px;
+        padding-right: 100px;
+    } 
+    
+    .griddesserts {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 
 }
 
@@ -519,11 +532,6 @@ h1 {
 .card:hover .prix {
     transform: translateX(-55px);
 }
-
-
-
-
-
 
 
 /***** header ****/
@@ -588,9 +596,7 @@ h1 {
 
 .gridentrees {
     padding-left: 100px;
-    padding-right: 100px;
-    
-    animation-name: progress 3000ms;
+    padding-right: 100px; 
 }
 
 .gridplats {
