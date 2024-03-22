@@ -1,3 +1,41 @@
+/***** animation ****/
+
+@keyframes slideinentrees {
+    0%  {
+        transform: translateX(3000px);
+}
+    50% {
+        transform: translateX(1500px);
+}
+    100% {
+        transform: translateX(0);
+}
+}
+
+@keyframes slideinplats {
+    0%  {
+        transform: translateX(3000px);
+}
+    50% {
+        transform: translateX(1500px);
+}
+    100% {
+        transform: translateX(0);
+}
+}
+
+@keyframes slideindesserts {
+    0%  {
+        transform: translateX(3000px);
+}
+    50% {
+        transform: translateX(1500px);
+}
+    100% {
+        transform: translateX(0);
+}
+}
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -94,6 +132,7 @@ h6 {
     font-size: 20px;
     opacity: 0.5;
     transition: transform 500ms cubic-bezier(.52,0,.07,1);
+    transition-delay: 300ms;
 }
 
 
@@ -225,11 +264,22 @@ input .macaron + label::before {
     background-color: white;
 }
 
+.slideinentrees   {
+    animation-duration: .7s;
+    animation-name: slideinentrees;
+}
+
 .gridentrees {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 15px;
+}
+
+.slideinplats{
+    animation-duration: .7s;
+    animation-name: slideinplats;  
+    animation-delay: 200ms;
 }
 
 .gridplats {
@@ -244,6 +294,12 @@ input .macaron + label::before {
     padding-bottom: 7px;
     border-bottom:5px solid var(--color5);
     width: 15%;
+}
+
+.slideindesserts{
+    animation-duration: .7s;
+    animation-name: slideindesserts;
+    animation-delay: 400ms ;
 }
 
 .griddesserts {
@@ -347,6 +403,7 @@ input .macaron + label::before {
   color:var(--color7);
   font-weight: 900;
   opacity: 1;
+  
 }
 
 .card {
@@ -361,6 +418,7 @@ input .macaron + label::before {
     justify-content: center;
     width: 100%;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 
@@ -465,27 +523,7 @@ h1 {
 
 
 
-/***** animation ****/
 
-@keyframes entrees {
-    0%  {
-        transform-origin: right;
-}
-    50% {
-        transform: scaleX (0.5);
-}
-    100% {
-        transform: scaleX(1);
-}
-}
-
-@keyframes plats {
-    
-}
-
-@keyframes desserts {
-    
-}
 
 
 /***** header ****/
@@ -551,7 +589,8 @@ h1 {
 .gridentrees {
     padding-left: 100px;
     padding-right: 100px;
-    animation: entrees 3000ms;
+    
+    animation-name: progress 3000ms;
 }
 
 .gridplats {

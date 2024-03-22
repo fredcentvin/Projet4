@@ -174,12 +174,30 @@ input {
   padding-bottom: 15px;
 }
 
+.boutontexte{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    padding-left: 5px;
+}
+    
+.boutonicone {
+    display: flex;
+    width:10%
+}
+    
+.boutonnumero {
+    display:flex;
+    align-items: center;
+    width: 5%;
+}
+
 .boutonchoix {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 40px;
-    gap: 20px;
+    gap:20px;
     padding-left: 10px;
 }
 
@@ -229,7 +247,6 @@ input {
     width: 100%;
     display: inline-flex;
     align-items: center;
-    gap: 20px;
     padding: 15px 15px 15px 25px;
     border-radius: 12px;
     border: none;
@@ -244,7 +261,6 @@ input {
     width: 100%;
     display: inline-flex;
     align-items: center;
-    gap:20px;
     padding: 15px 15px 15px 25px;
     border-radius: 12px;
     border: none;
@@ -258,7 +274,6 @@ input {
     width: 100%;
     display: inline-flex;
     align-items: center;
-    gap: 20px;
     padding: 15px 15px 15px 25px;
     border-radius: 12px;  
     border: none;
@@ -431,6 +446,31 @@ p {
 
 
 
+/* tablette */
+@media (min-width: 768px){
+
+.boutontexte{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    padding-left: 5px;
+}
+    
+.boutonicone {
+    display: flex;
+    width:10%
+}
+    
+.boutonnumero {
+    display:flex;
+    align-items: center;
+    width: 5%;
+}
+
+}
+
+
+
 /* desktop */
 @media (min-width: 1024px) {
 
@@ -482,6 +522,21 @@ h2 {
     margin-bottom: 0;
 }
 
+.boutontexte{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    padding-left: 5px;
+}
+
+.boutonicone {
+    width:10%
+}
+
+.boutonnumero {
+    width: 5%;
+}
+
 .cercle {
     margin-right: 0;
     position: unset;
@@ -503,6 +558,7 @@ h2 {
     padding: 0;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    gap: 15px;
 }
 
 .degust {
@@ -511,6 +567,7 @@ h2 {
     padding: 0;
     justify-content: flex-start;
     flex-wrap: nowrap;  
+    gap: 15px;
 }
 
 .menu {
