@@ -1,6 +1,5 @@
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
@@ -22,32 +21,44 @@ a {
 
 
 h1{
+    font-family: "roboto";
     text-align: center;
     font-size: 22px;
     padding-bottom: 15px;
 }
 
 h2 {
+    font-family: "roboto";
     font-weight: 600;
 }
 
 h3 {
+    font-family: "roboto";
     font-size: 16px;
     color: black;
     margin: 0;
 }
 
 h4 {
-   
+    font-family: "roboto";
     color:black;
-    font-weight: 50;
+    font-weight: 300;
 }
 
 h5 {
+    font-family: "roboto";
     text-align: center;
-    font-weight: 50;
+    font-weight: 300;
     font-size: 16px;
     color: rgb(79, 78, 78);
+}
+
+p {
+    font-family: "roboto";
+}
+
+a {
+    font-family: "roboto";
 }
 
 .card, .cardspecial {
@@ -62,26 +73,29 @@ h5 {
 .fa-regular.fa-heart {
     color: black;
     font-size: 26px;  
-    font-weight: 200;
-    
+    font-weight: 100; 
+    transition-property: opacity 1s;
 }
 
 .fa-regular.fa-heart:active {
-    color: #ff79da;
+    color:var(--color6);
     font-weight: 900;
 }
 
 .fa-mobile-screen-button {
     color: grey;
+    font-size: 16px;
 }
 
 .fa-list-ul {
     color: grey;
+    font-size: 16px;
 }
 
 .fa-store {
     color: var(--color7);
     font-weight: 400;
+    font-size: 16px;
 }
 
 /****** Header ***********/
@@ -494,13 +508,13 @@ p {
 @media (min-width: 1024px) {
 
 h1 {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
     padding-bottom: 25px;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -561,7 +575,7 @@ h5 {
 }
 
 .fonctionnement{
-    margin: 40px 120px 30px 120px;
+    margin: 40px 130px 30px 130px;
 }
 
 .boutonrestaurants {
@@ -639,13 +653,13 @@ h5 {
 .restaurantscards {
     display: flex;
     flex-direction: column;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
     gap: 40px;
 }
 
 .titresectionresto {
-    padding-left: 70px;
+    padding-left: 80px;
     padding-bottom: 30px;
     padding-top: 20px;
 }
@@ -758,7 +772,7 @@ h5 {
 .liensnav {
     flex-direction:row;
     padding-left: 0;
-    margin-right: 40px;
+    margin-right: 80px;
     align-items: center;
     gap: 10px;
     padding-bottom: 0;
@@ -772,7 +786,7 @@ h5 {
 .centrage {
     display: flex;
     gap: 15px;
-    margin-left: 20px;  
+    margin-left: 40px;  
     align-items: center;
 }
 
