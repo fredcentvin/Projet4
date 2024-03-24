@@ -38,7 +38,6 @@
 
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
 
@@ -67,8 +66,9 @@ h1{
 }
 
 h2 {
+    font-family: "roboto";
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 0;
 }
 
@@ -131,10 +131,16 @@ h6 {
 
 .fa-heart {
     color:black;
-    font-size: 24px;
-    opacity: 0.5;
-    transition: transform 500ms cubic-bezier(.52,0,.07,1);
-    transition-delay: 300ms;
+    font-size: 24px; 
+    opacity: 1;
+    font-weight: 100; 
+    transition-property: color 3s;
+   
+}
+
+.fa-heart:active {
+    color: #ff79da;
+    font-weight: 900; 
 }
 
 
@@ -177,7 +183,7 @@ h6 {
     padding-top: 15px;
     padding-bottom: 15px;
     width: 90%;
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 .logo1 img {
@@ -217,7 +223,6 @@ h6 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 8px;
 }
 
 .photorestocard img {
@@ -299,10 +304,9 @@ input .macaron + label::before {
 }
 
 .titre {
-    padding-left: 10px;
     padding-bottom: 7px;
     border-bottom:5px solid var(--color5);
-    width: 55px;
+    width: 45px;
 }
 
 .slideindesserts{
@@ -333,8 +337,6 @@ input .macaron + label::before {
     font-family: "Shrikhand";
     font-style: italic;
     font-weight: 400;
-    line-height: 41px;
-    letter-spacing: 0em;
     text-align: left;
     display: flex;
 }
@@ -395,8 +397,7 @@ input .macaron + label::before {
 .card-txt {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
-    padding-bottom: 5px;
+    padding-left: 15px;
     justify-content: center;
 }
 
@@ -405,15 +406,10 @@ input .macaron + label::before {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding-right: 15px;
+    padding-right: 25px;
 }
 
-.fa-heart:active{
-  color:var(--color7);
-  font-weight: 900;
-  opacity: 1;
-  
-}
+
 
 .card {
     display: flex;
@@ -444,7 +440,6 @@ input .macaron + label::before {
 .logofooter {
     display: flex;
     flex-direction: column;
-
     max-width: 100%;
     max-height: 100%;
     padding-bottom: 15px;
@@ -634,7 +629,7 @@ h1 {
 }
 
 .titre {
-    width: 48px;
+    width: 40px;
 }
 
 .calque {
