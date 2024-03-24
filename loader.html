@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="restaurants/restostyle.css">
+	<link rel="stylesheet" href="styleloader.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
-	<title>ohmyfood</title>
+
+    <title>loader ohmyfood</title>
+
+    <meta http-equiv="refresh" content="5; URL=file:///C:/Users/bonif/Documents/cloneprojet4/Projet4/index.html">
+	
 </head>
 <body>
     <header>
@@ -23,29 +28,89 @@
             <div class="logo1">
                 <img src="Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="logo oh my food">
             </div>
-            <div class="retour">
-                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
-            </div>
+        </div>
+        <div class="geographicposition">
+            <form method="get" class="searchbar" action="#">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <input type="text" id="saisi-recherche" placeholder="Paris, Belleville">
+            </form>
         </div>
     </header>
 		<main>
-            <div class="compoentrees">
-                <h1>Choix des entrées</h1>
-                <p>saisissez votre choix</p>
-               
+            <div class="titre">
+                <h1>Composez votre repas en trois clics</h1>
             </div>
-            <div class="compoplats">
-                <h1>Choix des plats</h1>
-                <p>saisissez votre choix</p>
-
+            <div card="global">
+                <div class="gridmenu">
+                    <div class="compoentrees">
+                        <div class="cardmenu">   
+                            <article class="card">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="resto-text">Choisissez vos entrées</h3>	
+                                        <h4 class="resto-petittexte">Faites votre choix</h4>
+                                    </div>
+                                    <div class="casemobile">
+                                        <div class="prix">
+                                            <h6 class="symboleeuro">25€</h6>
+                                        </div>
+                                        <div class="casecachee">
+                                            <input type="checkbox" class="escargots" id="escargots" checked>
+                                            <label for="escargots"><i class="fa-regular fa-circle-check"></i></label>
+                                    </div>
+                                </div>
+                            </article>   
+                        </div>
+                    </div>
+                    <div class="compoplats">
+                        <div class="cardmenu">   
+                            <article class="card">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="resto-text">Choisissez vos plats</h3>	
+                                        <h4 class="resto-petittexte">Faites votre choix</h4>
+                                    </div>
+                                    <div class="casemobile">
+                                        <div class="prix">
+                                            <h6 class="symboleeuro">40€</h6>
+                                        </div>
+                                        <div class="casecachee">
+                                            <input type="checkbox" class="escargots" id="escargots" checked>
+                                            <label for="escargots"><i class="fa-regular fa-circle-check"></i></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div> 
+                    </div>
+                    <div class="compodesserts">
+                        <div class="cardmenu">   
+                            <article class="card">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="resto-text">Choisissez vos désserts</h3>	
+                                        <h4 class="resto-petittexte">Faites votre choix</h4>
+                                    </div>
+                                    <div class="casemobile">
+                                        <div class="prix">
+                                            <h6 class="symboleeuro">18€</h6>
+                                        </div>
+                                        <div class="casecachee">
+                                            <input type="checkbox" class="escargots" id="escargots" checked>
+                                            <label for="escargots"><i class="fa-regular fa-circle-check"></i></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="commande">
+                    <div class="boutoncommande">
+                        <button class="actioncommande">Commander</button>
+                    </div>
+                </div>
             </div>
-            <div class="compodesserts">
-                <h1>Choix des desserts</h1>
-                <p>saisissez votre choix</p>
-
-            </div>
-          
-
         </main>
 		<footer>
 			<div class="gridfooter">
