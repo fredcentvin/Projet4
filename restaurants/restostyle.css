@@ -302,7 +302,7 @@ input .macaron + label::before {
     padding-left: 10px;
     padding-bottom: 7px;
     border-bottom:5px solid var(--color5);
-    width: 15%;
+    width: 55px;
 }
 
 .slideindesserts{
