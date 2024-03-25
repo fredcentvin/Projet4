@@ -70,16 +70,33 @@ a {
     object-fit: cover;
 }
 
+.fa-solid.fa-heart {
+    font-size: 27px;
+    color:transparent;
+    position:absolute;
+    top: 10px;
+    right: 24px;
+    background-image:linear-gradient(#ff79da,#9356dc); 
+    background-clip: text;
+    opacity: 0;
+    transition: all ease-in-out 300ms;
+}
+
 .fa-regular.fa-heart {
     color: black;
     font-size: 26px;  
-    font-weight: 100; 
-    transition-property: opacity 1s;
+    font-weight: 100;
+    opacity: 1;
+    transition: all ease-in-out 300ms;
 }
 
-.fa-regular.fa-heart:active {
-    color:var(--color6);
+.fa-regular.fa-heart:hover {
+    opacity: 0;
+}
+
+.fa-solid.fa-heart:hover {
     font-weight: 900;
+    opacity: 1;
 }
 
 .fa-mobile-screen-button {
@@ -165,10 +182,12 @@ input {
     padding: 15px 15px 15px 15px;
     box-shadow: 0px 2px 5px gray ;
     background:linear-gradient(#ff79da,#9356dc);
+    transition:all ease-in-out 300ms ;
 }
 
 .exploration:hover {
-    opacity: 0.9;
+    box-shadow: 0px 3px 7px gray ;
+    opacity: 0.8;
 }
 
 

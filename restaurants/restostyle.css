@@ -47,7 +47,7 @@
     --color3: #89c8fa;
     --color4: #eafbff;
     --color5: #99e2d0;
-    --color6: #fcc0ce;
+    --color6: #ff79da;
     --color7: #9356dc;
 }
 
@@ -129,20 +129,35 @@ h6 {
     object-fit:contain;
 }
 
-.fa-heart {
+.fa-regular.fa-heart {
     color:black;
     font-size: 24px; 
     opacity: 1;
     font-weight: 100; 
-    transition-property: color 3s;
-   
+    transition: all ease-in-out 300ms;   
 }
 
-.fa-heart:active {
-    color: #ff79da;
-    font-weight: 900; 
+.fa-regular.fa-heart:hover {
+    color: transparent;
+    opacity: 0;   
 }
 
+.fa-solid.fa-heart {
+    font-size: 26px;
+    position: absolute;
+    top:43px;
+    right: 250px;
+    color: transparent;
+    opacity: 0;
+    background-image: linear-gradient(#ff79da,#9356dc);
+    background-clip: text;
+    transition: all ease-in-out 300ms;
+}
+
+.fa-solid.fa-heart:hover {
+    opacity: 1;
+    font-weight: 900;
+}
 
 .actioncommande {
     height: 50px;
@@ -155,12 +170,13 @@ h6 {
     box-shadow: 0px 2px 5px gray ;
     background:linear-gradient(#ff79da,#9356dc);
     flex-grow: 1;
+    transition:all ease-in-out 300ms ;
 }
 
 .actioncommande:hover {
     box-shadow: 0px 3px 7px gray ;
-    opacity: 0.9;
-    transition:200ms ;
+    opacity: 0.8;
+   
 }
 
 
@@ -620,7 +636,6 @@ h1 {
 .fa-heart {
     font-size: 28px;
     opacity: 0.5;
-    transition: transform 200ms cubic-bezier(.52,0,.07,1);
 }
 
 .entete {
@@ -635,8 +650,8 @@ h1 {
 .calque {
   background-color: white;
   display: flex;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
   display: flex;
   flex-direction: column;
 }
@@ -654,7 +669,7 @@ h1 {
     padding: 22px 20px 22px 20px;
     transform-origin: right;
     transform:scaleX(0);
-    transition: transform 200ms cubic-bezier(.52,0,.07,1);
+    transition: all ease-in-out 300ms ;
 }
 
 .checkbox {
@@ -664,24 +679,24 @@ h1 {
 
 
 .gridentrees {
-    padding-left: 100px;
-    padding-right: 100px; 
+    padding-left: 150px;
+    padding-right: 150px; 
 }
 
 .gridplats {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
 } 
 
 .griddesserts {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .prix {
     position: relative;
     left: 45px;
-    transition: transform 200ms cubic-bezier(.52,0,.07,1);
+    transition: all ease-in-out 300ms ;
 }
 
 
