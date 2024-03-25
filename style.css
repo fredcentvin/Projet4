@@ -74,8 +74,6 @@ a {
     font-size: 27px;
     color:transparent;
     position:absolute;
-    top: 10px;
-    right: 24px;
     background-image:linear-gradient(#ff79da,#9356dc); 
     background-clip: text;
     opacity: 0;
@@ -115,7 +113,14 @@ a {
     font-size: 16px;
 }
 
-/****** Header ***********/
+
+/****** loader ***********/
+
+
+
+
+
+/****** header ***********/
 .logo1 {
     display: flex;
     justify-content: center;
@@ -517,6 +522,45 @@ p {
     width: 5%;
 }
 
+.gridfooter {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 30px 20px 20px ;
+}
+
+.logofooter {
+    display: flex;
+    padding-bottom: 0;
+}
+
+.logofooter img {
+    object-fit: cover;
+    width: 100px;
+}
+
+.liensnav {
+    flex-direction:row;
+    padding-left: 0;
+    margin-right: 80px;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 0;
+    margin-top: 20px;
+}
+
+.containerlogotexte {
+    display: flex;
+}
+
+.centrage {
+    display: flex;
+    gap: 15px;
+    margin-left: 40px;  
+    align-items: center;
+}
 
 
 }
