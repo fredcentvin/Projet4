@@ -1,3 +1,47 @@
+
+
+@keyframes loadeffect {
+ 0% {
+   transform: translateY(100%);
+ }
+   100% {
+    transform: translateY(0);
+   } 
+}
+
+@keyframes spin {
+    from{
+         transform: rotate(0deg);
+     }
+     to {
+         transform : rotate(360deg);  
+          
+     }
+ }
+
+
+@keyframes slideinrestos {
+    0% {
+        transform: translateX(5000px);
+    }
+    25% {
+        transform: translateX(2500px);
+    }
+    50% {
+        transform: translateX(1500px);
+    }
+    75% {
+        transform: translateX(750px)
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+
+
 /****** General ***********/
 * {
     box-sizing: border-box;
@@ -77,11 +121,11 @@ a {
 .fa-solid.fa-heart {
     font-size: 27px;
     color:transparent;
-    position:absolute;
     background-image:linear-gradient(#ff79da,#9356dc); 
     background-clip: text;
     opacity: 0;
-    transition: all ease-in-out 300ms;
+    transition: opacity ease-in-out 300ms;
+    animation-fill-mode: both;
 }
 
 .fa-regular.fa-heart {
@@ -89,14 +133,14 @@ a {
     font-size: 26px;  
     font-weight: 100;
     opacity: 1;
-    transition: all ease-in-out 300ms;
+    transition: opacity ease-in-out 300ms;
 }
 
-.fa-regular.fa-heart:hover {
+.fa-regular.fa-heart:active {
     opacity: 0;
 }
 
-.fa-solid.fa-heart:hover {
+.fa-solid.fa-heart:active {
     font-weight: 900;
     opacity: 1;
 }
@@ -119,9 +163,33 @@ a {
 
 
 /****** loader ***********/
+.loader {
+    background-color: #f3f3f3;
+    position:relative;
+    transform-origin: top;
+    transform: translateY(0);
+    width: 100%;
+    height: 100%;
+    animation-name: loadeffect;
+    animation-duration: 5000ms;
+    
+}
 
-
-
+.circle {
+    transform-origin: top;
+    transform: translateY(0);
+    border:10px solid #f3f3f3;
+    border-top: 10px solid var(--color7);
+    border-bottom: 10px solid var(--color6);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    animation: spin 1s linear; 
+    z-index: 501; 
+    opacity:0
+    
+}
 
 
 /****** header ***********/
@@ -150,8 +218,7 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px; 
-    box-shadow: inset 0px 0px 3px rgb(179, 179, 179), 0px 0px 3px rgb(63, 63, 63);
-    
+    box-shadow: inset 0px 0px 3px rgb(179, 179, 179), 0px 0px 3px rgb(63, 63, 63);    
 }
 
 input {
@@ -167,7 +234,10 @@ input {
 
 
 /****** positionnement ******/
-
+.slideinresto {
+    animation-duration: 1000ms;
+    animation-name: slideinrestos;
+}
 
 /****** introduction ******/
 .gridintroduction {
@@ -209,7 +279,8 @@ input {
     background-color: white;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .titrefonctionnement {
@@ -717,6 +788,15 @@ h5 {
 
 
 /***** restaurants ****/
+
+.fa-regular.fa-heart:hover {
+    opacity: 0;
+}
+
+.fa-solid.fa-heart:hover {
+    font-weight: 900;
+    opacity: 1;
+}
 .restaurantscards {
     display: flex;
     flex-direction: column;
