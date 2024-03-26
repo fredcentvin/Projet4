@@ -1,3 +1,25 @@
+@keyframes slideinrestos {
+    0% {
+        transform: translateX(5000px);
+    }
+    25% {
+        transform: translateX(2500px);
+    }
+    50% {
+        transform: translateX(1500px);
+    }
+    75% {
+        transform: translateX(750px)
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+
+
 /****** General ***********/
 * {
     box-sizing: border-box;
@@ -82,6 +104,7 @@ a {
     background-clip: text;
     opacity: 0;
     transition: all ease-in-out 300ms;
+    animation-fill-mode: both;
 }
 
 .fa-regular.fa-heart {
@@ -92,11 +115,11 @@ a {
     transition: all ease-in-out 300ms;
 }
 
-.fa-regular.fa-heart:hover {
+.fa-regular.fa-heart:active {
     opacity: 0;
 }
 
-.fa-solid.fa-heart:hover {
+.fa-solid.fa-heart:active {
     font-weight: 900;
     opacity: 1;
 }
@@ -119,8 +142,6 @@ a {
 
 
 /****** loader ***********/
-
-
 
 
 
@@ -150,8 +171,7 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px; 
-    box-shadow: inset 0px 0px 3px rgb(179, 179, 179), 0px 0px 3px rgb(63, 63, 63);
-    
+    box-shadow: inset 0px 0px 3px rgb(179, 179, 179), 0px 0px 3px rgb(63, 63, 63);    
 }
 
 input {
@@ -167,7 +187,10 @@ input {
 
 
 /****** positionnement ******/
-
+.slideinresto {
+    animation-duration: 1000ms;
+    animation-name: slideinrestos;
+}
 
 /****** introduction ******/
 .gridintroduction {

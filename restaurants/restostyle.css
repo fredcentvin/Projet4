@@ -109,7 +109,6 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba);
     margin-bottom: 15px;
     box-shadow: 0px 2px 5px rgb(173, 173, 173) ;
 }
