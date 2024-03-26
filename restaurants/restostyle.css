@@ -388,8 +388,6 @@ a {
     transition: all ease-in-out 300ms;  
 }
 
-
-
 .symboleeuro {
     font-size: 15px;
     font-weight: 600;
@@ -540,7 +538,7 @@ p {
 }
 
 .casecachee {
-padding: 18px 18px 18px 18px;
+    padding: 18px 18px 18px 18px;
 }
 
 .gridentrees {
@@ -653,7 +651,7 @@ body {
 
 .fa-regular.fa-heart {
     font-size: 28px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .fa-solid.fa-heart {
