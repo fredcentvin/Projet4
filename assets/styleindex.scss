@@ -1,0 +1,529 @@
+/****** General ***********/
+@import "header";
+@import "footer";
+@import "btnfonctionnement";
+@import "color";
+@import "keyframerestos";
+@import "loader";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    z-index: 1;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1{
+    font-family: "roboto";
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-family: "roboto";
+    font-weight: 600;
+}
+
+h3 {
+    font-family: "roboto";
+    font-size: 16px;
+    color: black;
+    margin: 0;
+}
+
+h4 {
+    font-family: "roboto";
+    color:black;
+    font-weight: 300;
+}
+
+h5 {
+    font-family: "roboto";
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(79, 78, 78);
+}
+
+p {
+    font-family: "roboto";
+}
+
+a {
+    font-family: "roboto";
+}
+
+.card, .cardspecial {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.fa-solid.fa-heart {
+    font-size: 27px;
+    color:transparent;
+    position: absolute;
+    background-clip: text;
+    opacity: 0;
+    transition: opacity ease-in-out 300ms;
+    animation-fill-mode: both;
+    @include  degrade;    
+}
+
+.fa-regular.fa-heart {
+    color: black;
+    font-size: 26px;  
+    font-weight: 100;
+    opacity: 1;
+    transition: opacity ease-in-out 300ms;
+}
+
+.fa-regular.fa-heart:active {
+    opacity: 0;
+}
+
+.fa-solid.fa-heart:active {
+    font-weight: 900;
+    opacity: 1;
+}
+
+.coeurcard:focus {
+    opacity: 1;
+    animation-fill-mode: both;
+}
+
+.fa-mobile-screen-button {
+    color: grey;
+    font-size: 16px;
+}
+
+.fa-list-ul {
+    color: grey;
+    font-size: 16px;
+}
+
+.fa-store {
+    color: $purplecolor;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/****** introduction ******/
+.gridintroduction {
+    padding: 20px 15px 30px 15px;
+    @include fondcolor;
+}
+
+.restaurationchoix {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.exploration {
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0px 2px 5px gray ;
+    transition:all ease-in-out 300ms ;
+    @include degrade;
+}
+
+.exploration:hover {
+    box-shadow: 0px 3px 7px gray ;
+    opacity: 0.8;
+}
+
+
+/****** fonctionnement ***********/
+.fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.titrefonctionnement {
+  display: flex;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.boutonchoix {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap:20px;
+    padding-left: 10px;
+}
+
+.boutonrestaurants {
+    border: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu {
+    border: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.degustation {
+    border: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/****** restaurants ******/
+.titresectionresto {
+    display: flex;
+    width: 100%;
+}
+
+.badgerectangle {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    top:15px;
+    right: 15px;
+    @include badge;
+}
+
+.gridcards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 35px 20px 35px 20px;
+    @include fondcolor;
+}
+
+.cardresto {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position:relative;    
+}
+
+.cardresto .card img  {
+    width: 100%;
+    object-fit: cover;
+    height: 190px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.card img   {
+    object-fit:cover;
+}
+
+.cardresto .cardspecial img  {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 55%;
+    height: 190px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.containercontenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 45px;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.resto-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.resto-petittexte {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.coeurcard {
+    border: none;
+    background-color: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: 20px;
+}
+
+
+
+/* desktop */
+@media (min-width: 1024px) {
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 13px;
+}
+
+h5 {
+    font-size: 13px;
+}
+
+
+/***** fonctionnement ****/
+.titrefonctionnement{
+    padding-bottom: 20px;
+}
+
+.restaurationchoix {
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+.exploration {
+    font-size: 13px;
+    padding: 10px 10px;
+}
+
+.boutonchoix {
+    width: 100%;
+    height: 50px;
+    flex-wrap: nowrap;
+    gap: 25px;
+    margin-bottom: 0;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fonctionnement{
+    margin: 40px 130px 30px 130px;
+}
+
+.boutonrestaurants {
+    margin-bottom: 0;
+}
+
+.menu {
+    margin-bottom: 0;
+}
+
+.degustation {
+    margin-bottom: 0;
+}
+
+
+/***** restaurants ****/
+.fa-regular.fa-heart:hover {
+    opacity: 0;
+}
+
+.fa-solid.fa-heart:hover {
+    font-weight: 900;
+    opacity: 1;
+}
+
+.restaurantscards {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 40px;
+}
+
+.titresectionresto {
+    padding-left: 80px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.gridcards {
+    display: flex;
+    margin: 50px 0 0px 0;
+    padding: 15px 50px 30px 50px; 
+}
+
+.cardresto {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cardresto .card img  {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 65%;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card img   {
+    object-fit:cover;
+}
+
+.cardresto .cardspecial img  {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 55%;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cardspecial img   {
+    object-fit:cover;
+}
+
+.groupresto1 {
+    width: 100%;
+    flex-direction: row;
+    display: flex; 
+    gap: 80px; 
+}
+
+.menilmontant {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.charonne {
+    display: flex;
+    flex-direction: column;
+    width: 50%;    
+}
+
+.groupresto2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.citerouge {
+    display: flex;
+    flex-direction: column;
+    width: 50%;  
+}
+
+.foliemericourt {
+    display: flex;
+    flex-direction: column;
+    width: 50%;  
+}
+
+.resto-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+}
+
+
+
+@media (min-width:1441px) {
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+html {
+    display: flex;
+}
+
+body {
+    width:100%;    
+}
+
+.positionnement {
+    max-width: 100%;
+}
+
+.gridintroduction {
+    width: 100%;
+}
+
+.fonctionnement {
+    max-width: 1440px;
+}
+
+.gridfooter {
+    width: 100%;
+}
+
+}

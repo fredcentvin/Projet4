@@ -1,0 +1,23 @@
+@keyframes slideinrestos {
+    0% {
+        transform: translateX(5000px);
+    }
+    25% {
+        transform: translateX(2500px);
+    }
+    50% {
+        transform: translateX(1500px);
+    }
+    75% {
+        transform: translateX(750px)
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+.slideinresto {
+    animation-duration: 1000ms;
+    animation-name: slideinrestos;
+}
