@@ -1,0 +1,15 @@
+$pinkcolor: #ff79da;
+$purplecolor: #9356dc;
+$fondcolor: #f6f6f6;
+$badgecolor: #99e2d0;
+$fontbadgecolor: green;
+
+
+@mixin degrade {
+    background-color: ($pinkcolor,$purplecolor);
+}
+
+@mixin badge {
+    background-color: $badgecolor;
+    color: $fontbadgecolor;
+}

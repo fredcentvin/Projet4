@@ -1,0 +1,27 @@
+@keyframes loadeffect {
+    5% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform:translateY(100%)
+    }
+    80% {
+        transform: translateY(100%);
+    }
+   100% {
+        transform: translateY(0);
+   } 
+}
+
+.loader {
+    background-color: white;
+    position:relative;
+    transform-origin: top;
+    transform: translateY(0);
+    width: 100%;
+    height: 100%;
+    animation-name: loadeffect;
+    animation-duration:  3000ms;
+    animation-timing-function: ease;
+    z-index: 500; 
+}
